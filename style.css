@@ -719,6 +719,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-green-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
@@ -861,11 +866,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.hover\:bg-green-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -974,8 +974,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .m-md\:min-h-\[90vh\] {
-    min-height: 90vh;
+  .m-md\:min-h-\[100vh\] {
+    min-height: 100vh;
+  }
+
+  .m-md\:min-h-full {
+    min-height: 100%;
   }
 
   .m-md\:w-1\/2 {
@@ -1003,6 +1007,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .m-md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .m-md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .m-md\:text-black {
